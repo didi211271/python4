@@ -1,0 +1,66 @@
+1 вариант 
+1
+num = int(input("Введите целлое число:"))
+if num < 0: 
+    result = abc(num)
+    print(f"Преобразованное число: {result}")
+elif num == 0:
+    result = 1 
+    print(f"Преобразованное число: {result}")
+else:
+    print(f"Число: {num}")
+
+2
+text = input("Введите произвольную строку:")
+if '.' in text or ',' in text:
+    print(True)
+else:
+    print(False)
+
+3
+num1 = int(input("Введите первое число:"))
+num2 = int(input("Введите второе число:"))
+divisible1 = num1 % 3 == 0
+divisible2 = num2 % 3 == 0
+if divisible1 and divisible2:
+    print(True)
+elif divisible1 or divisible2:
+    print("Одно число делится на 3")
+else:
+    print(False)
+
+2 вариант
+
+1
+num = int(input("Введите число:"))
+in num < 0:
+   pass
+elif num > 100:
+    print("*")
+else:
+    print("*" * num)
+
+2
+str1 = input("Введите первую строку:")
+str2 = input("Введите вторую строку:")
+if str1 == str2:
+    print(True)
+else:
+    print(False)
+
+3
+r = int(input("Введите значение r (0-255):"))
+g = int(input("Введите значение g (0-255):"))
+b = int(input("Введите значение b (0-255):"))
+if r == 0 and g == 0 and b == 0:
+    print("Черный цвет")
+elif r == 255 and g == 255 and b == 255:
+    print("Белый цвет")
+elif r == 255 and g == 0 and b == 0:
+    print("Красный цвет")
+elif r == 0 and g == 255 and b == 0:
+    print("Зеленый цвет")
+elif r == 0 and g == 0 and b == 255:
+    print("Синий цвет")
+else: 
+    print("Нет цвета")
