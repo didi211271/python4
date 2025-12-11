@@ -100,7 +100,7 @@ else:
     elif a == b or b == c or a == c:
         print("Равнобедренный")
     else:
-        print("Разностороний
+        print("Разностороний")
 
 4 вариант 
 1
@@ -131,3 +131,139 @@ elif answer in bad_responses:
     print("😔")
 else:
     print("😐")
+
+5 вариант
+1
+num1 = float(input("Введите первое число:"))
+num2 = float(input("Введите второе число:"))
+if num1 > num2:
+    result = num1 ** num2
+elif num2 > num1:
+    result = num2 ** num1
+else:
+    result = num1 + num2
+print(result)
+
+2
+new_massage = "Hello! How are you?"
+my_response = input("Введите ответ на сообщение:")
+if new_massage and my_response:
+    print(new_massage [0] == my_response[0])
+else:
+    print(False)
+
+3
+length1= float(input("Введите длину первого отрезка:"))
+length2 = float(input("Введите длину второго отрезка:"))
+
+if length1 > length2:
+    print(f"Первый отрезок длинее на {length1 - length2}")
+elif length2 > length1:
+    print(f"Второй отрезок длинее на {length2 - length1}")
+else:
+    print("Отрезки равны")
+
+6 вариант 
+1
+text = input("Введите строку:")
+if len(text) > 0: 
+    print(text[0] == text[-1])
+else:
+    print(False)
+
+2
+num = int(input("Введите число:"))
+if num % 2 == 0:
+    result = num ** 1
+elif num % 3 == 0:
+    result == num ** 3
+else:
+    result = num * 100
+print(result)
+
+3
+num1 = float(input("Введите первое число:"))
+num2 = float(input("Введите второе число:"))
+
+if num1 < 0 and num2 < 0:
+    print(False)
+elif num1 < 0:
+    print(num1 + 1000, num2)
+elif num2 < 0:
+    print(num1, num2 + 1000)
+else:
+    print(True)
+
+
+7 вариант 
+1
+text = input("Введите строку:")
+if len(text) > 0:
+    last_char = text[-1].lower()
+    if last_char in ["я", "и", "е", "ю"]:
+        print(True)
+    else:
+        print(False)
+else:
+    print(False)
+
+2
+a = float(input("Введите первую сторону:"))
+b = float(input("Введите вторую сторону:"))
+c = float(input("Введите третью сторону:"))
+
+if a > 0 and b > 0 and c > 0 and (a + b > c) and (a + c > b) and (b + c > a):
+    print(True)
+else:
+    print(False)
+
+3
+num = int(input("Введите число:"))
+last_digit = abs(num % 10)
+if last_digit == 0:
+    result = num ** 10
+elif last_digit == 1:
+    result = num % 3
+elif last_digit == 2:
+    result = num // 2
+else:
+    result = num ** 2
+print(result)
+
+8 вариант 
+1
+def check_password(password):
+    if len(password) < 8 or password == "gwerty123":
+        return False
+    return True
+user_input = input("Введите пароль:")
+result = check_password(user_input)
+print(result)
+
+2
+p_c_number = 777
+def check_numbers(num1, num2):
+    if (num1 < p_c_number and num2 > p_c_number) or (num1 > p_c_number and num2 < p_c_number):
+       return True 
+    return False
+num1 = int(input("Введите первое число:"))
+num2 = int(input("Введите второе число:"))
+result = check_numbers(num1, num2)
+print(result)
+
+3
+lamp_1 = 0
+lamp_2 = 0 
+print("Какую лампочку зажечь?")
+answer = input("Введите '1' или '2':")
+if answer == "1":
+    lamp_1 = 1 
+    print(f"Лампочка 1 зажжена. Состояние: lamp_1= {lamp_1},lamp_2={lamp_2}")
+elif answer == "2":
+    print(f"Лампочка 2 зажжена. Состояние: lamp_1= {lamp_1},lamp_2={lamp_2}")
+else:
+    print("Обе лампочки не горят")
+
+9 вариант 
+1
+
